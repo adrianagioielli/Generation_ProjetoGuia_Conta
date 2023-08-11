@@ -1,6 +1,6 @@
 package conta.model;
 
-public class Conta {
+public abstract class Conta {
 	private int numero;
 	private int agencia;
 	private int tipo;
@@ -66,6 +66,7 @@ public class Conta {
 		this.setSaldo(this.getSaldo() - valor);
 		return true;
 	}
+	
 	public void depositar(float valor) {
 		this.setSaldo(this.getSaldo() + valor);
 	}
